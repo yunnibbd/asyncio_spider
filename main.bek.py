@@ -125,6 +125,7 @@ async def main(max):
 
 if __name__ == '__main__':
     loop = asyncio.get_event_loop()
-    asyncio.ensure_future(main(300))
-    loop.run_forever()
+    # asyncio.ensure_future(main(300))
+    # loop.run_forever()
+    loop.run_until_complete(main(300))
     print("所有都下载完毕")
